@@ -49,6 +49,14 @@ dic['签约日期'] = str(int(table.cell(27, 3).value))
 dic['无功容量'] = table.cell(28, 3).value
 dic['社会代码'] = table.cell(29, 3).value
 
+# 补充备用字段
+dic['备用字段甲'] = table.cell(30, 3).value
+dic['备用字段乙'] = table.cell(31, 3).value
+dic['备用字段丙'] = table.cell(32, 3).value
+dic['备用字段丁'] = table.cell(33, 3).value
+dic['备用字段戊'] = table.cell(34, 3).value
+dic['备用字段戌'] = table.cell(35, 3).value
+
 # 添加供电方案所需要的特殊内容
 if u'杆' in dic[u'下线点']:
     dic[u'产权分界'] = '下线的附杆柱上开关设备负荷侧与用户电缆连接点处'
