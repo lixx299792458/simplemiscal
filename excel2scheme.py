@@ -79,8 +79,8 @@ if '+' in dic['核定容量'] or '*' in dic['核定容量']:
 print(dic)
 
 # 开启融合，并保存到指定位置
-# obj = DocxTemplate('C:\\simplemiscal\\供电方案答复模板.docx')
-obj = DocxTemplate('C:\\供电方案答复模板.docx')
+obj = DocxTemplate('C:\\template\\供电方案答复模板.docx')
+# obj = DocxTemplate('C:\\供电方案答复模板.docx')
 obj.render(dic)
 pathsave = path + '\\' + dic['申请编号'] + dic['客户名称'] + dic['业务类别'] + str(dic['申请容量']) + '答复供电方案.docx'
 obj.save(pathsave)
