@@ -20,7 +20,7 @@ dic = {
 }
 
 # 根据地址读取为字典，方便融合
-wb = load_workbook(path + '\\字段.xlsm')
+wb = load_workbook(path + '\\新字段.xlsm')
 table = wb.active
 
 dic['申请编号'] = str(int(table.cell(3, 3).value))
